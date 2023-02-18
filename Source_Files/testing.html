@@ -1,0 +1,61 @@
+       <?php
+
+   function getIPAddress() {  
+    //whether ip is from the share internet  
+     if(!empty($_SERVER['HTTP_CLIENT_IP'])) {  
+                $ip = $_SERVER['HTTP_CLIENT_IP'];  
+        }  
+    //whether ip is from the proxy  
+    elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {  
+                $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];  
+     }  
+//whether ip is from the remote address  
+    else{  
+             $ip = $_SERVER['REMOTE_ADDR'];  
+     }  
+     return $ip;  
+}  
+       
+      
+        if(isset($_GET['liked_shop'])){
+
+          $get_ip=getIPAddress();
+         
+          $select_query="Select * from `likes` where ip_address='$get_ip'"; 
+
+             $result_query=mysqli_query($con,$select_query);
+             $count_likes=mysqli_num_rows($result_query);
+            }
+             else{
+              $get_ip=getIPAddress();
+         
+          $select_query="Select * from `likes` where ip_address='$get_ip'"; 
+
+             $result_query=mysqli_query($con,$select_query);
+             $count_likes=mysqli_num_rows($result_query);
+             }
+             echo $count_likes;
+        }
+        ?>
+
+
+
+
+
+         include 'includes/db.php';
+
+ $shopname=$_GET['shopname'];
+
+$sql="SELECT * FROM likes WHERE shopname='$shopname'";
+
+if ($result=mysqli_query($con,$sql))
+  {
+  // Return the number of rows in result set
+  $rowcount=mysqli_num_rows($result);
+   echo " <p class='pt-4 px-5' style='color: darkgray;'>No of Likes = <?php echo '$rowcount'; ?></p>";
+  // Free result set
+ 
+  }
+  else{
+     echo " <p class='pt-4 px-5' style='color: darkgray;'>No of Likes = 0</p>";
+  }
