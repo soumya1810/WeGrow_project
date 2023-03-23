@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="demo.css" media="all" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div class="container">
+
+			<header  >
+				<h1 style="color: black;"><span style="font-size: larger; font-weight: 600;"><img src="icons8-natural-food-96.png" alt="icons8-natural-food-96.png"> We-Grow</span><br> Registration Form for Users</h1>
+            </header>
+      <div  class="form" style="border: black solid 2px; border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;">
+    		<form id="contactform">
+    			<p class="contact" style="font-family: 'Montserrat', sans-serif;"><label for="name">Name</label></p>    			<input id="name" name="name" placeholder="First and last name" required="" tabindex="1" type="text">
+
+    			<p class="contact"><label for="email">Email</label></p>
+    			<input id="email" name="email" placeholder="example@domain.com" required="" type="email">
+
+                <p class="contact"><label for="username" style="font-family: 'Montserrat', sans-serif;">Create a username</label></p>
+    			<input id="username" name="username" placeholder="username" required="" tabindex="2" type="text">
+
+                <p class="contact"><label for="password" style="font-family: 'Montserrat', sans-serif;">Create a password</label></p>
+    			<input type="password" id="password" name="password" required="">
+                <p class="contact"><label for="repassword" style="font-family: 'Montserrat', sans-serif;">Confirm your password</label></p>
+    			<input type="password" id="repassword" name="repassword" required="">
+
+               <fieldset>
+                 <label>Birthday</label>
+                  <label class="month">
+                  <select class="select-style" name="BirthMonth">
+                  <option value="">Month</option>
+                  <option  value="01">January</option>
+                  <option value="02">February</option>
+                  <option value="03" >March</option>
+                  <option value="04">April</option>
+                  <option value="05">May</option>
+                  <option value="06">June</option>
+                  <option value="07">July</option>
+                  <option value="08">August</option>
+                  <option value="09">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12" >December</option>
+                  </label>
+                 </select>
+                <label>Day<input class="birthday" maxlength="2" name="BirthDay"  placeholder="Day" required=""></label>
+                <label>Year <input class="birthyear" maxlength="4" name="BirthYear" placeholder="Year" required=""></label>
+              </fieldset>
+
+            <select class="select-style gender" style="font-size: medium;" name="gender">
+            <option value="select" style="font-family: 'Montserrat', sans-serif;color: black;">Gender</option>
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+            <option value="others">Other</option>
+            </select><br><br>
+
+            <p class="contact"><label for="phone">Mobile phone</label></p>
+            <input id="phone" name="phone" placeholder="phone number" required="" type="text"> <br>
+        <a href="C:\xampp\htdocs\ip_front\home.html">   <input class="buttom" name="submit" id="submit" tabindex="5" value="Register!" type="submit" style="margin-left: 150px; padding: 10px; border: solid rgb(14, 97, 112) 1px;"></a> 
+   </form>
+</div>
+</div>
+
+</body>
+</html>
