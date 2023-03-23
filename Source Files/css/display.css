@@ -1,0 +1,95 @@
+.subtitle{
+	font-family: 'Alegreya Sans SC';
+}
+.border1{
+	background: linear-gradient(110deg, #faaba3 60%, #E7F2F8 60%); 
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.carousel-dark{
+	height: 450px;
+}
+.disp{
+	margin-left: 23%; font-style: italic; font-weight: lighter;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+
+}
+.exp_more{
+  background-image: url('https://t4.ftcdn.net/jpg/00/87/70/73/360_F_87707311_PFBt7s5l6LDyktc0u6L0DY8WH6j6gEXw.jpg');
+}
+.toi{
+	position: relative;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: #E7F2F8;
+
+}
+
+
+
+
+
+.plist{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+}
+.exp{
+   background-color: #f9b0a9 ;
+ 
+    font-size: 18PX;
+    color: white;
+}
+.exp:hover {
+    
+ background-color: #e2847b;
+ 
+  color: white;
+  
+
+}
+.exp1{
+/*   background-color: #f9b0a9 ;*/
+ /* background-color: darkgray;*/
+ background-color: #e2847b;
+   margin-left: 4%;
+
+color: white;
+}
+.exp1:hover {
+    
+ background-color: #e2847b;
+ background-color: grey;
+  color: white;
+  
+
+}
+.checked {
+  color: orange;
+}
+.list-group-item{
+    padding: 1.5%;
+}
+.con{
+   /* font-weight: lighter;*/
+   border-style: solid;  border-width: 0px 0px 0px 1.5px; border-color:    #d6dbdb ; 
+}
+.hm{
+   /* background-color: #fde9e8; */
+    background-color: #fde9e8;
+    border-style: solid;  
+    border-width: 0px 0px 0px 8px; 
+    border-color:#eb8a86 ;
+   /*border-color: darkgray;*/
+}
+.sc{
+   background-color: #3e96a8 ;
+ 
+   
+}
+.sc:hover {
+    
+ background-color: #296470;
+  
+
+}
